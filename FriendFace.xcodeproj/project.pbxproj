@@ -15,6 +15,10 @@
 		0BF8115521FE2AD300FEFECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8115321FE2AD300FEFECC /* LaunchScreen.storyboard */; };
 		0BF8116021FE2AD300FEFECC /* FriendFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8115F21FE2AD300FEFECC /* FriendFaceTests.swift */; };
 		0BF8116B21FE2AD300FEFECC /* FriendFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8116A21FE2AD300FEFECC /* FriendFaceUITests.swift */; };
+		0BF8117921FE2C6200FEFECC /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8117821FE2C6200FEFECC /* Friend.swift */; };
+		0BF8117B21FE2DC600FEFECC /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8117A21FE2DC600FEFECC /* Connection.swift */; };
+		0BF8117D21FE380200FEFECC /* JSONDecoder-Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8117C21FE380100FEFECC /* JSONDecoder-Remote.swift */; };
+		0BF8117F21FE3BC400FEFECC /* FriendDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8117E21FE3BC400FEFECC /* FriendDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0BF8116621FE2AD300FEFECC /* FriendFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF8116A21FE2AD300FEFECC /* FriendFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceUITests.swift; sourceTree = "<group>"; };
 		0BF8116C21FE2AD300FEFECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF8117821FE2C6200FEFECC /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		0BF8117A21FE2DC600FEFECC /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		0BF8117C21FE380100FEFECC /* JSONDecoder-Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder-Remote.swift"; sourceTree = "<group>"; };
+		0BF8117E21FE3BC400FEFECC /* FriendDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,14 @@
 			children = (
 				0BF8114721FE2AD000FEFECC /* AppDelegate.swift */,
 				0BF8114921FE2AD000FEFECC /* ViewController.swift */,
+				0BF8117C21FE380100FEFECC /* JSONDecoder-Remote.swift */,
 				0BF8114B21FE2AD000FEFECC /* Main.storyboard */,
 				0BF8115121FE2AD300FEFECC /* Assets.xcassets */,
 				0BF8115321FE2AD300FEFECC /* LaunchScreen.storyboard */,
 				0BF8115621FE2AD300FEFECC /* Info.plist */,
 				0BF8114E21FE2AD000FEFECC /* FriendFace.xcdatamodeld */,
+				0BF8118021FE403900FEFECC /* Model */,
+				0BF8117E21FE3BC400FEFECC /* FriendDatasource.swift */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -126,6 +137,15 @@
 				0BF8116C21FE2AD300FEFECC /* Info.plist */,
 			);
 			path = FriendFaceUITests;
+			sourceTree = "<group>";
+		};
+		0BF8118021FE403900FEFECC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8117821FE2C6200FEFECC /* Friend.swift */,
+				0BF8117A21FE2DC600FEFECC /* Connection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF8117D21FE380200FEFECC /* JSONDecoder-Remote.swift in Sources */,
 				0BF8115021FE2AD000FEFECC /* FriendFace.xcdatamodeld in Sources */,
+				0BF8117F21FE3BC400FEFECC /* FriendDatasource.swift in Sources */,
 				0BF8114A21FE2AD000FEFECC /* ViewController.swift in Sources */,
+				0BF8117B21FE2DC600FEFECC /* Connection.swift in Sources */,
 				0BF8114821FE2AD000FEFECC /* AppDelegate.swift in Sources */,
+				0BF8117921FE2C6200FEFECC /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
